@@ -2,7 +2,7 @@
 const Player = require("../src/player");
 
 describe("constructor function", () => {
-  let player;
+ let player;
   let config;
   let sword;
   let trainingDummy;
@@ -27,7 +27,7 @@ describe("constructor function", () => {
       dialogue: "Huzzah!",
     };
     player = new Player(config);
-  });
+  }); 
   it("returns an object", () => {
     expect(player).toBeInstanceOf(Object);
   });

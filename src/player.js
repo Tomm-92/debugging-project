@@ -6,7 +6,7 @@ function Player(config) {
   this.equippedWeapon = null;
 }
 
-Player.prototype = Object.create(Character.prototype);
+/* Player.prototype = Object.create(Character.prototype);
 
 Object.defineProperty(Player.prototype, "constructor", {
   value: Player,
@@ -25,6 +25,6 @@ Player.prototype.equip = function (weapon) {
 Player.prototype.attack = function (target) {
   target._takeDamage(this.equippedWeapon.damage);
   return this._describeAttack(target);
-};
+}; */
 
 module.exports = Player;
