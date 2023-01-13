@@ -1,5 +1,6 @@
 const Character = require('../src/character1.js');
 
+
 describe('Character', () => {
   let config;
   let character;
@@ -14,7 +15,6 @@ describe('Character', () => {
 
     character = new Character(config);
   });
-
 
   describe('Character constuctor with stats', () => {
     it('can be instantiated', () => {

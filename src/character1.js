@@ -1,9 +1,11 @@
+//const characterConfig = require('./src/characterConfig');
+
 class Character {
-  constructor(config) {
-    this.name = config.name;
-    this.health = config.health;
-    this.maxHealth = config.maxHealth;
-    this.dialogue = config.dialogue;
+  constructor(characterConfig) {
+    this.name = characterConfig.name;
+    this.health = characterConfig.health;
+    this.maxHealth = characterConfig.maxHealth;
+    this.dialogue = characterConfig.dialogue;
   }
 
   _takeDamage(damage) {
