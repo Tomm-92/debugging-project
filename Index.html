@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <div id = 'nav' > nav </div>
+    <div id = 'p1-hud' > p1-hud </div>
+    <div id = 'p1-buttons' >
+    <button id="p1-attack">Attack!</button>
+    <button id="p1-heal">Heal!</button>
+    </div>
+    <div id = 'p2-hud' > p2-hud </div>
+    <div id = 'p2-buttons' >
+    <button id="p2-attack">Attack!</button>
+    <button id="p2-heal">Heal!</button>
+    </div>
+    <div id = 'game' > game </div>
+    <div id = 'message' > message </div>
+    <div id = 'socials' > socials </div>
+
+
+    <script src="./src/character1.js"></script>
+    <script src="./src/characterConfig.js"></script>
+
+    <script>
+        const characterConfig = new CharacterConfig()
+        const character = new Character(characterConfig);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+} 
+
+@font-face {
+    font-family: myfont;
+    src: url(https://www.fontspace.com/aerologica-font-f43859);
+}
+
+body {
+    background-color: #222222;
+    color: whitesmoke;
+    display: grid;
+    grid-template-rows: 8;
+    grid-template-columns: 6;
+
+}
+
+#nav {
+    border: solid 2px white;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-family: myfont;
+
+
+}
+
+#p1-hud {
+    border: solid 1px white;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: auto;
+}
+
+#p1-buttons {
+    display: grid;
+    border: solid 1px white;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-content: center;
+    align-content: center;
+}
+
+#p2-hud {
+    border: solid 1px white;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    width: auto;
+}
+
+#p2-buttons {
+    display: grid;
+    border: solid 1px white;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    justify-content: center;
+    align-content: center;
+}
+
+#game {
+    border: solid 1px white;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-image: url('./images/pokemon.png');;
+
+}
+
+#message {
+    border: solid 1px white;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+
+}
+
+#socials {
+    border: solid 1px white;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 8;
+
+}

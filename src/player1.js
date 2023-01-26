@@ -1,4 +1,4 @@
-const Character = require('./character1');
+plconst Character = require('./character1');
 
 class Player extends Character {
   constructor(config) {

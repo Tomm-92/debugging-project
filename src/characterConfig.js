@@ -1,5 +1,7 @@
 /* eslint-disable babel/no-unused-expressions */
-const battleCries = [
+(function exportcharacterConfig () {
+
+const battle = [
   'your souls are ours!',
   'bring them to their knees!',
   'chaos and anarchy!',
@@ -33,14 +35,21 @@ const names = [
   'massasauga',
 ];
 
-class characterConfig {
+class CharacterConfig {
   constructor() {
     this.name = names[Math.floor(Math.random() * names.length)];
     this.health = Math.floor(Math.random() * (10 - 5 + 1) + 5);
     this.maxHealth = 10;
-    this.dialogue = battleCries[Math.floor(Math.random() * battleCries.length)];
+    this.dialogue = battle[Math.floor(Math.random() * battle.length)];
   }
 };
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = CharacterConfig;
+} else {
+  window.CharacterConfig = CharacterConfig;
+}
+})();
 
 
-module.exports = characterConfig;
+
+//module.exports = characterConfig;
