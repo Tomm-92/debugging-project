@@ -55,6 +55,8 @@ body {
     grid-column-start: 5;
     grid-column-end: 6;
     width: auto;
+    
+
 }
 
 #p2-buttons {
@@ -69,12 +71,11 @@ body {
 }
 
 #game {
-    border: solid 1px white;
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 6;
-    /*background-image: url('./images/pokemon.png'); */
+    background-image: url('./images/pokemon.png');
 
 }
 
@@ -96,9 +97,11 @@ body {
 }
 
 #player1 {
-    background-image: url('./images/bulbasaur.png');
-    position: absolute;
-    height: 64px;
-    width: 128px;
+    background: transparent;   
+    height: 100px;
+    width: 100px;
+        transform: translate(650%, 250%);
+        display: inline-block;
+
   }
   

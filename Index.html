@@ -20,13 +20,10 @@
     <button id="p2-attack">Attack!</button>
     <button id="p2-heal">Heal!</button>
     </div>
-    <div id = 'game' > game 
-        <div id = 'player1'></div>
-        <div id = 'player2'></div>
-    </div>
+
     <div id = 'message' > message </div>
     <div id = 'socials' > socials </div>
-
+    <div id = 'game' > game </div>
 
     <script src="./src/character1.js"></script>
     <script src="./src/characterConfig.js"></script>
@@ -35,7 +32,7 @@
     <script src="./src/controller.js"></script>
 
     <script>
-        const contoller = new Controller1();
+        const controller = new Controller1();
         const characterConfig1 = new CharacterConfig();
         const characterConfig2 = new CharacterConfig();
         const weapon = new Weapon();
@@ -43,7 +40,7 @@
         const character2 = new Character(characterConfig2)
         const player1 = new Player(characterConfig1);
         const player2 = new Player(characterConfig2);
-        contoller.renderPlayer1();
+        controller.renderPlayer1();
     </script>
 
 </body>
