@@ -109,10 +109,10 @@ body {
  
     background-repeat: no-repeat; 
     background-size: none;
-    height: 130px;
+    height: 110px;
     width: 110px;
         content: url('./images/charmander.png'); 
-        transform: translate(50%, 180%);
+        transform: translate(50%, 230%);
         display: inline-block;
 
   }

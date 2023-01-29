@@ -2,12 +2,11 @@
   class Controller1 {
     constructor(name) {
       this.name = name;
-      this.renderPlayer1();
       // this.player1 = player1;
-      // document.querySelector('#p1-attack').addEventListener('click', () => {
-      // console.log('click');
-      // this.renderPlayer1();
-      //   })
+      document.querySelector('#p1-attack').addEventListener('click', () => {
+      console.log('click');
+      this.renderPlayer1();
+      })
     }
 
     /* renderPlayer1() {
@@ -15,7 +14,7 @@
     } */
 
     renderPlayer1() {  
-        const backgrounds = ['./css/images/char3.png', './css/images/char75.png'];
+        const backgrounds = ['./css/images/char75.png', './css/images/char3.png'];
         let backgroundIndex = 0;
         window.setInterval(() => {
           document.querySelector('#player1').style.content = `url('${
