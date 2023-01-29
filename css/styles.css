@@ -106,10 +106,13 @@ body {
   }
 
   #player1 {
-    background: transparent;   
-    height: 90px;
-    width: 90px;
-        transform: translate(-60%,280%);
+ 
+    background-repeat: no-repeat; 
+    background-size: none;
+    height: 130px;
+    width: 110px;
+        content: url('./images/charmander.png'); 
+        transform: translate(50%, 180%);
         display: inline-block;
 
   }
