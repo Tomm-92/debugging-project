@@ -23,7 +23,10 @@
 
     <div id = 'message' > message </div>
     <div id = 'socials' > socials </div>
-    <div id = 'game' > game </div>
+    <div id = 'game' > game 
+        <img id = 'player1'></div>
+    
+    </div>
 
     <script src="./src/character1.js"></script>
     <script src="./src/characterConfig.js"></script>
@@ -40,7 +43,9 @@
         const character2 = new Character(characterConfig2)
         const player1 = new Player(characterConfig1);
         const player2 = new Player(characterConfig2);
+        //controller.renderPlayer2();
         controller.renderPlayer1();
+        //controller.animatePlayer1();
     </script>
 
 </body>

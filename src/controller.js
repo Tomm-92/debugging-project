@@ -14,26 +14,35 @@
       document.querySelector('#player1').style.backgroundImage = "url('./css/images/bulbasaur.png')";
     } */
 
-    renderPlayer1() {
-        const newPlayerElement = document.createElement('img');
-        newPlayerElement.setAttribute("src", "./css/images/test.png");
-        newPlayerElement.id = 'player1';
-        const playerElement = document.querySelector('#game');
-        playerElement.appendChild(newPlayerElement);
+    renderPlayer1() {  
+      const newPlayerElement1 = document.querySelector('#player1');
+      newPlayerElement1.setAttribute("src", "./css/images/charmander.png");
+    } 
 
-      
-      
-        /*const backgrounds = ['./css/images/test.png', './css/images/test.png'];
+    /*renderPlayer2() {
+        const newPlayerElement2 = document.createElement('img');
+        newPlayerElement2.setAttribute("src", "./css/images/bulbasaur.png");
+        newPlayerElement2.id = 'player2';
+        const playerElement2 = document.querySelector('#game');
+        playerElement2.appendChild(newPlayerElement2);
+
+    } */
+
+   
+    /*animatePlayer1() {
+      const backgrounds = ['./css/images/charmander.png', './css/images/bulbasaur.png'];
       let backgroundIndex = 0;
       window.setInterval(() => {
-        document.querySelector('#game').style.backgroundImage = `url('${
+        document.querySelector('#player1').setAttribute = `url('${
           backgrounds[backgroundIndex % backgrounds.length]
         }')`;
         backgroundIndex += 1;
       }, 1000);
-    } */
-  }
+  } */
+
 }
+
+
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = Controller1;
   } else {
