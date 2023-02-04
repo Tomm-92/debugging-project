@@ -2,8 +2,7 @@
   class Controller1 {
     constructor(name) {
       this.name = name;
-      // this.player1 = player1;
-      document.querySelector('#p1-attack').addEventListener('click', () => {
+      document.querySelector('#start-button').addEventListener('click', () => {
       console.log('click');
       this.renderPlayer1();
       })
@@ -22,6 +21,7 @@
           }')`;
           backgroundIndex += 1;
         }, 750);
+        this.renderMessage('Lets get this game going!')
       }
 
     
@@ -35,7 +35,19 @@
 
     } 
 
+    renderMessage(message) {
+      const messageElement = document.createElement('div');
+      messageElement.id = 'message';
+      messageElement.innerHTML = message;
 
+      const viewport = document.querySelector('#game-narrative');
+      viewport.appendChild(messageElement);
+      setTimeout(() => {
+        viewport.removeChild(messageElement);
+      }, 10000);
+    }
+
+    
   }
 
    
