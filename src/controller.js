@@ -2,6 +2,7 @@
   class Controller1 {
     constructor(name) {
       this.name = name;
+      this.headsUpDisplay();
       document.querySelector('#start-button').addEventListener('click', () => {
       console.log('click');
       this.renderPlayer1();
@@ -47,7 +48,14 @@
       }, 10000);
     }
 
-    
+    headsUpDisplay () {
+      const hudMessage1 = 'Name: <br> Health: <br> Weapon:'
+      document.getElementById('p1-hud').innerHTML = hudMessage1;
+      document.getElementById('p2-hud').innerHTML = hudMessage1;
+    }
+
+
+
   }
 
    

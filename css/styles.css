@@ -38,7 +38,7 @@ body {
     grid-row-end: 7;
     grid-column-start: 1;
     grid-column-end: 2;
-    width: auto;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #p1-buttons {
@@ -58,7 +58,7 @@ body {
     grid-row-end: 8;
     grid-column-start: 5;
     grid-column-end: 6;
-    width: auto;
+    font-family: 'Press Start 2P', cursive;
     
 
 }
@@ -133,7 +133,7 @@ body {
     background: transparent;   
     height: 100px;
     width: 100px;
-        transform: translate(650%, 250%);
+        transform: translate(500%, 250%);
         display: inline-block;
 
   }
@@ -152,6 +152,10 @@ body {
   #start-button {
 background: none;
 border: none;
+  }
 
+  #attack {
+    background: none;
+border: none;
   }
  
