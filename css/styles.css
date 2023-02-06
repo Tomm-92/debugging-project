@@ -27,25 +27,30 @@ body {
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
-    font-family: myfont;
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-large;
+    text-align: center;
 
 
 }
 
 #p1-hud {
+    display: flex;
     border: solid 1px white;
     grid-row-start: 2;
-    grid-row-end: 7;
+    grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 2;
     font-family: 'Press Start 2P', cursive;
+    align-items: center;
+
 }
 
 #p1-buttons {
     display: grid;
     border: solid 1px white;
-    grid-row-start: 7;
-    grid-row-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 7;
     grid-column-start: 1;
     grid-column-end: 2;
     justify-content: center;
@@ -53,12 +58,14 @@ body {
 }
 
 #p2-hud {
+    display: flex;
     border: solid 1px white;
     grid-row-start: 2;
-    grid-row-end: 8;
+    grid-row-end: 5;
     grid-column-start: 5;
     grid-column-end: 6;
     font-family: 'Press Start 2P', cursive;
+    align-items: center;
     
 
 }
@@ -66,8 +73,8 @@ body {
 #p2-buttons {
     display: grid;
     border: solid 1px white;
-    grid-row-start: 7;
-    grid-row-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 7;
     grid-column-start: 5;
     grid-column-end: 6;
     justify-content: center;
@@ -81,6 +88,7 @@ body {
     grid-row-start: 2;
     grid-row-end: 7;
     background-image: url('./images/pokemon.png');
+    min-width: 900px;
 
 }
 
@@ -152,16 +160,25 @@ body {
   #start-button {
 background: none;
 border: none;
+    font-family: 'Press Start 2P', cursive;
   }
 
   #attack {
-    background: none;
-border: none;
+    background: red;
+    border: solid 4px black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-large;
+    margin: 5px;
   }
 
   #heal {
     background: none;
-border: none;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+    background-color: green;
+    border: black solid 4px;
+    font-size: x-large;
+    margin: 5px;
   }
  
  

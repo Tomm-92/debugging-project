@@ -1,17 +1,14 @@
 (function exportController1() {
   class Controller1 {
-    constructor(name) {
-      this.name = name;
+    constructor(character1, character2) {
+      this.character1 = character1;
+      this.character2 = character2;
       this.headsUpDisplay();
       document.querySelector('#start-button').addEventListener('click', () => {
       console.log('click');
       this.renderPlayer1();
       })
     }
-
-    /* renderPlayer1() {
-      document.querySelector('#player1').style.backgroundImage = "url('./css/images/bulbasaur.png')";
-    } */
 
     renderPlayer1() {  
         const backgrounds = ['./css/images/char75.png', './css/images/char3.png'];
@@ -48,11 +45,12 @@
       }, 10000);
     }
 
-    headsUpDisplay () {
-      const hudMessage1 = 'Name: <br> Health: <br> Weapon:'
+   headsUpDisplay () {
+      const hudMessage1 = `Name: ${this.character1.name} <br><br><br>Health: ${this.character1.health} HP <br><br><br> Weapon: Warhammer`
+      const hudMessage2 = `Name: ${this.character2.name} <br><br><br> Health: ${this.character2.health} HP <br><br><br> Weapon: Volcanic Spear`
       document.getElementById('p1-hud').innerHTML = hudMessage1;
-      document.getElementById('p2-hud').innerHTML = hudMessage1;
-    }
+      document.getElementById('p2-hud').innerHTML = hudMessage2;
+    } 
 
 
 
