@@ -11,24 +11,30 @@
     <div id="nav"> Welcome to Saffron City </div>
     <div id="p1-hud">p1-hud</div>
     <div id="p1-buttons">
-      <button id="attack">
+      <button id="attack1">
         Attack!
       </button>
-      <button id="heal">
+      <button id="heal1">
         Heal
+      </button>
+      <button id="equip1">
+        Equip Weapon
       </button>
     </div>
     <div id="p2-hud">p2-hud</div>
     <div id="p2-buttons">
-      <button id="attack">
+      <button id="attack2">
         Attack!
       </button>
-      <button id="heal">
+      <button id="heal2">
         Heal
+      </button>
+      <button id="equip2">
+        Equip Weapon
       </button>
     </div>
 
-    <div id="game-narrative"> </div>
+    <div id="game-narrative"> Click start to commence the battle! </div>
     <div id="start">
       <button id="start-button">
       <img src="./css/images/start.png"
@@ -52,12 +58,17 @@
     <script>
       const characterConfig1 = new CharacterConfig();
       const characterConfig2 = new CharacterConfig();
-      const weapon = new Weapon();
       const character1 = new Character(characterConfig1);
       const character2 = new Character(characterConfig2);
       const player1 = new Player(characterConfig1);
       const player2 = new Player(characterConfig2);
-      const controller = new Controller1(character1, character2);
+      const weapon1 = new Weapon();
+      const weapon2 = new Weapon();
+      const weapon3 = new Weapon();
+      const weapon4 = new Weapon();
+      const weapon5 = new Weapon();
+      const weapon6 = new Weapon();
+      const controller = new Controller1();
       controller.renderPlayer2();
       //controller.animatePlayer1();
     </script>

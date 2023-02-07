@@ -1,55 +1,53 @@
 /* eslint-disable babel/no-unused-expressions */
-(function exportcharacterConfig () {
+(function exportcharacterConfig() {
+  const battle = [
+    'Your souls are ours!',
+    'Bring them to their knees!',
+    'Chaos and anarchy!',
+    'We stand together!',
+    'Dont run, youre already dead!',
+    'Feed them to the maggots!',
+    'Obliterate them from history!',
+    'Death to the enemy!',
+    'Swift and savage!',
+    'Let the crows feast tonight!',
+    'Death and glory!',
+    'Glory to us all!',
+    'Prepare to die!',
+  ];
 
-const battle = [
-  'your souls are ours!',
-  'bring them to their knees!',
-  'chaos and anarchy!',
-  'we stand together!',
-  'dont run, youre already dead!',
-  'feed them to the maggots!',
-  'obliterate them from history!',
-  'death to the enemy!',
-  'swift and savage!',
-  'let the crows feast tonight!',
-  'death and glory!',
-  'glory to us all!',
-  'prepare to die!',
-];
+  const names = [
+    'Adder',
+    'Agama',
+    'Blind snake',
+    'Blue racer',
+    'Boa constrictor',
+    'Bushmaster',
+    'Diamond python',
+    'Habu',
+    'Whip snake',
+    'Viper',
+    'Sidewinder',
+    'Ringhals',
+    'Python',
+    'Pit viper',
+    'Massasauga',
+  ];
 
-const names = [
-  'adder',
-  'agama',
-  'blind snake',
-  'blue racer',
-  'boa constrictor',
-  'bushmaster',
-  'diamond python',
-  'habu',
-  'whip snake',
-  'viper',
-  'sidewinder',
-  'ringhals',
-  'python',
-  'pit viper',
-  'massasauga',
-];
-
-class CharacterConfig {
-  constructor() {
-    this.name = names[Math.floor(Math.random() * names.length)];
-    this.health = Math.floor(Math.random() * (10 - 5 + 1) + 5);
-    this.maxHealth = 10;
-    this.dialogue = battle[Math.floor(Math.random() * battle.length)];
+  class CharacterConfig {
+    constructor() {
+      this.name = names[Math.floor(Math.random() * names.length)];
+      this.health = Math.floor(Math.random() * (10 - 5 + 1) + 5);
+      this.maxHealth = 10;
+      this.dialogue = battle[Math.floor(Math.random() * battle.length)];
+    }
   }
-};
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = CharacterConfig;
-} else {
-  window.CharacterConfig = CharacterConfig;
-}
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = CharacterConfig;
+  } else {
+    window.CharacterConfig = CharacterConfig;
+  }
 })();
 
 
-
-//module.exports = characterConfig;
+// module.exports = characterConfig;
